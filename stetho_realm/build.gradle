@@ -12,14 +12,14 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.0"
 
     defaultConfig {
         minSdkVersion 9
-        targetSdkVersion 26
-        versionCode 1000
-        versionName "2.1.0"
+        targetSdkVersion 27
+        versionCode 1001
+        versionName "2.1.1"
         consumerProguardFiles 'proguard-rules.pro'
     }
 
@@ -43,7 +43,7 @@ android {
 
 dependencies {
     provided 'com.facebook.stetho:stetho:1.5.0'
-    provided 'io.realm:realm-android-library:3.7.1'
+    provided 'io.realm:realm-android-library:4.1.1'
     compile fileTree(dir: 'libs', include: '*.jar')
 }
 
